@@ -3,10 +3,11 @@ branches:
   only:
     - master
     - /^greenkeeper/.*$/
-cache:
-  yarn: true
+install:
+  - npm ci
+cache: 
   directories:
-    - node_modules
+    - "$HOME/.npm"
 notifications:
   email: false
 node_js:

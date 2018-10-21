@@ -12,7 +12,7 @@
   "author": "Matt Johnston <m@ttjohnston.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/purepassword/purepass-core"
+    "url": "https://github.com/purepass/purepass-core"
   },
   "license": "MIT",
   "engines": {

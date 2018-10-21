@@ -5,9 +5,7 @@ branches:
     - /^greenkeeper/.*$/
 install:
   - npm ci
-cache: 
-  directories:
-    - "$HOME/.npm"
+cache: false
 notifications:
   email: false
 node_js:

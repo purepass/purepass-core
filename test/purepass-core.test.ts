@@ -1,5 +1,4 @@
 import purepass from '../src/purepass-core'
-import Erric from 'easy-e'
 
 describe('purepass', () => {
   describe('should generate a password to spec with just a secret', () => {
@@ -10,7 +9,6 @@ describe('purepass', () => {
   })
 
   describe('purepass/validators', () => {
-    
     describe('namespace validation', () => {
       it('should throw if namespace is not 2 characters in length', () => {
         expect(() => {
@@ -18,7 +16,7 @@ describe('purepass', () => {
         }).toThrow()
       })
       it('should generate if namespace is defined and meets constraints', () => {
-        expect(purepass.generatePassword('password123',{ namespace:'fa'})).toHaveLength(64)
+        expect(purepass.generatePassword('password123', { namespace: 'fa' })).toHaveLength(64)
       })
     })
 
@@ -34,7 +32,7 @@ describe('purepass', () => {
         }).toThrow()
       })
       it('should generate if specialCharacter is defined and meets constraints', () => {
-        expect(purepass.generatePassword('password123', { specialCharacter: '*'})).toHaveLength(64)
+        expect(purepass.generatePassword('password123', { specialCharacter: '*' })).toHaveLength(64)
       })
     })
 
@@ -45,7 +43,7 @@ describe('purepass', () => {
         }).toThrow()
       })
       it('should generate if maxPassword the option is defined and meets constraints', () => {
-        expect(purepass.generatePassword('password123',{ maxPasswordLength: 14 })).toHaveLength(14)
+        expect(purepass.generatePassword('password123', { maxPasswordLength: 14 })).toHaveLength(14)
       })
     })
   })

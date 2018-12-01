@@ -15,6 +15,17 @@ export const secret = (secret: string) => {
     return e
   }
 
+  if (!secret.length) {
+    let e = new Erric(`purepass/validators/validate.secret/(secret!=='')`)
+    e.setMessageForHumans('first parameter must be a string with a length > 0')
+    e.setMetadata({
+      input: {
+        secret
+      }
+    })
+    return e
+  }
+
   if (currentTypeOf(secret) !== 'string') {
     let e = new Erric(`purepass/validators/validate.secret/(currentTypeOf(secret)!='string')`)
     e.setMessageForHumans('first parameter "secret" must be a string')

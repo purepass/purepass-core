@@ -1,10 +1,6 @@
 /**
  * purepass shall be a pure function that takes a string, and an optional options object
  * the function will not depend on any context, every function call with the same parameters will yield the same string
- * the 'algorithm' is as follows:
- * namespace is a string of 2 *letters* in length that may be passed in as an option
- * namespace defaults to 'Un' representing 'undefined'
- * specialCharacter is a single character string, and is any character found in https://www.owasp.org/index.php/Password_special_characters
  */
 
 const SHA256 = require('crypto-js/sha256')
@@ -106,8 +102,6 @@ class PurePass {
 
     errorArray.forEach(e => {
       if (e) {
-        // TODO: remove log prior to shipping
-        //console.log(JSON.stringify(e))
         if (failQuietly) {
           e.err()
           return

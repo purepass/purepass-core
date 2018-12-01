@@ -92,6 +92,7 @@
     "coveralls": "^3.0.2",
     "cross-env": "^5.2.0",
     "cz-conventional-changelog": "^2.1.0",
+    "easy-e": "^3.1.0",
     "husky": "^1.2.0",
     "jest": "^23.6.0",
     "jest-config": "^23.6.0",
@@ -114,11 +115,10 @@
     "tslint-config-prettier": "^1.17.0",
     "tslint-config-standard": "^8.0.1",
     "typedoc": "^0.13.0",
-    "typescript": "^3.2.1"
+    "typescript": "^2.9.2"
   },
   "dependencies": {
     "crypto-js": "^3.1.9-1",
-    "easy-e": "^3.1.0",
-    "special-characters": "^1.0.0"
+    "current-type-of": "^2.0.0"
   }
 }

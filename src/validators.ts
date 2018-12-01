@@ -1,6 +1,6 @@
-import Erric from 'easy-e'
+const Erric = require('easy-e')
 const currentTypeOf = require('current-type-of')
-const mySpecialCharacters = require('special-characters')
+import mySpecialCharacters from './mySpecialCharacters'
 
 export const secret = (secret: string) => {
   if (!secret) {
@@ -99,12 +99,10 @@ export const specialCharacter = (specialCharacter: string) => {
         return e
       }
 
-      if (mySpecialCharacters.indexOf(specialCharacter) < 0) {
+      if (mySpecialCharacters.indexOf(specialCharacter) < -1) {
         let e = new Erric('purepass/validateArgs/specialCharacter/not-in-mySpecialCharacters')
         e.setMessageForHumans(
-          `if specified, "specialCharacter" must be one of the following characters
-                      ${mySpecialCharacters}
-                  `
+          `if specified, "specialCharacter" must be one of the following characters \n ${mySpecialCharacters}`
         )
         e.setMetadata({
           input: {

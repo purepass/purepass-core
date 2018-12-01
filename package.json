@@ -117,7 +117,7 @@
   },
   "dependencies": {
     "crypto-js": "^3.1.9-1",
-    "easy-e": "^3.0.0",
+    "easy-e": "^3.1.0",
     "special-characters": "^1.0.0"
   }
 }

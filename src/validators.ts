@@ -1,12 +1,23 @@
-import Erric from 'easy-e'
+const Erric = require('easy-e')
 const currentTypeOf = require('current-type-of')
-const mySpecialCharacters = require('special-characters')
+import mySpecialCharacters from './mySpecialCharacters'
 
 export const secret = (secret: string) => {
   if (!secret) {
     // only mandatory param
     let e = new Erric('purepass/validators/validate.secret/(!secret)')
     e.setMessageForHumans('secret must be provided as first param')
+    e.setMetadata({
+      input: {
+        secret
+      }
+    })
+    return e
+  }
+
+  if (!secret.length) {
+    let e = new Erric(`purepass/validators/validate.secret/(secret!=='')`)
+    e.setMessageForHumans('first parameter must be a string with a length > 0')
     e.setMetadata({
       input: {
         secret
@@ -99,12 +110,10 @@ export const specialCharacter = (specialCharacter: string) => {
         return e
       }
 
-      if (mySpecialCharacters.indexOf(specialCharacter) < 0) {
+      if (mySpecialCharacters.indexOf(specialCharacter) < -1) {
         let e = new Erric('purepass/validateArgs/specialCharacter/not-in-mySpecialCharacters')
         e.setMessageForHumans(
-          `if specified, "specialCharacter" must be one of the following characters
-                      ${mySpecialCharacters}
-                  `
+          `if specified, "specialCharacter" must be one of the following characters \n ${mySpecialCharacters}`
         )
         e.setMetadata({
           input: {

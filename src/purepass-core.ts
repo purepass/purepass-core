@@ -70,7 +70,6 @@ class PurePass {
   }
 
   public generatePassword(secret: string, options?: PurePassOptions) {
-
     let namespace: string = this._defaultNamespace
     let specialCharacter: string = this._defaultSpecialCharacter
     let maxPasswordLength: number = this._defaultMaxPasswordLength
@@ -87,9 +86,7 @@ class PurePass {
     const secretError = validate.secret(secret) // validation ensures secret is non-null
 
     // other validation is executed only if the given option is defined
-    const namespaceError = namespace
-      ? validate.namespace(namespace)
-      : null
+    const namespaceError = namespace ? validate.namespace(namespace) : null
 
     const specialCharacterError = specialCharacter
       ? validate.specialCharacter(specialCharacter)
@@ -109,7 +106,7 @@ class PurePass {
 
     errorArray.forEach(e => {
       if (e) {
-        // TODO: r  emove log prior to shipping
+        // TODO: remove log prior to shipping
         console.log(JSON.stringify(e))
         if (failQuietly) {
           e.err()

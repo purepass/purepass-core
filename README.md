@@ -18,7 +18,7 @@ To make matters worse we shouldn't re-use passwords because this can turn any on
 
 ## the solution
 
-purepass takes a secret, and a namespace, and they are hashed together with other optional configuration to generate a password 64 characters in length, with all the traits any website requires.
+purepass takes a secret, and a namespace, and they are hashed together using sha256 and other optional configuration to generate a password 64 characters in length, with all the traits any website requires.
 
 It is advisable that you choose a new secret for every site, but if thats too much (you aren't alone!), changing the namespace from one site to the next will ensure that your 64 character password will be entirely different for each site or service you log in to.
 

@@ -4,7 +4,7 @@
 [![Travis](https://img.shields.io/travis/purepass/purepass-core.svg)](https://travis-ci.org/alexjoverm/typescript-library-starter)
 [![Coveralls](https://img.shields.io/coveralls/purepass/purepass-core.svg)](https://coveralls.io/github/purepass/purepass-core)
 
-[TypeDoc docs](https://purepass.github.io/purepass-core/)
+[purepass-core docs generated with TypeDoc](https://purepass.github.io/purepass-core/)
 
 
 ## the problem

@@ -1,4 +1,5 @@
-import purepass from '../src/purepass-core'
+import { Purepass } from '../src/purepass-core'
+const purepass = new Purepass()
 
 describe('purepass', () => {
   describe('should generate a password to spec with just a secret', () => {

@@ -1,4 +1,4 @@
-import { Purepass } from '../src/purepass-core'
+import { Purepass, PurepassOptions } from '../src/purepass-core'
 const purepass = new Purepass()
 
 describe('purepass', () => {

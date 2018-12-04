@@ -1,6 +1,7 @@
 /**
  * purepass shall be a pure function that takes a string, and an optional options object
- * the function will not depend on any context, every function call with the same parameters will yield the same string
+ * the function will not depend on any context
+ * every function call with the same parameters will yield the same string
  */
 
 const SHA256 = require('crypto-js/sha256')

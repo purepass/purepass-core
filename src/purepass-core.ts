@@ -8,7 +8,7 @@ const SHA256 = require('crypto-js/sha256')
 import * as validate from './validators'
 import myABCs from './myABCs'
 
-class PurePassOptions {
+export class PurepassOptions {
   constructor(
     public namespace?: string,
     public specialCharacter?: string,
@@ -16,7 +16,7 @@ class PurePassOptions {
     public failQuietly?: boolean
   ) {}
 }
-class PurePass {
+class Purepass {
   protected _defaultNamespace: string = 'Un'
   protected _defaultSpecialCharacter: string = '#'
   protected _defaultNumberString: string = '00'
@@ -66,7 +66,7 @@ class PurePass {
     return hash.substring(leadingHashIndex, maxPasswordLength)
   }
 
-  public generatePassword(secret: string, options?: PurePassOptions) {
+  public generatePassword(secret: string, options?: PurepassOptions) {
     let namespace: string = this._defaultNamespace
     let specialCharacter: string = this._defaultSpecialCharacter
     let maxPasswordLength: number = this._defaultMaxPasswordLength
@@ -120,4 +120,5 @@ class PurePass {
     return `${prefix}${suffix}`
   }
 }
-export default new PurePass()
+
+export default new Purepass()

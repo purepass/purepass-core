@@ -120,5 +120,3 @@ export class Purepass {
     return `${prefix}${suffix}`
   }
 }
-
-export default new Purepass()

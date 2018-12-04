@@ -16,7 +16,7 @@ export class PurepassOptions {
     public failQuietly?: boolean
   ) {}
 }
-class Purepass {
+export class Purepass {
   protected _defaultNamespace: string = 'Un'
   protected _defaultSpecialCharacter: string = '#'
   protected _defaultNumberString: string = '00'

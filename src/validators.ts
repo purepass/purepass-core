@@ -80,7 +80,7 @@ export const maxPasswordLength = (maxPasswordLength: number) => {
       return e
     }
 
-    if (maxPasswordLength >= 13) {
+    if (maxPasswordLength <= 13) {
       let e = new Erric('purepass/valudateArgs/(maxPasswordLength<=13)')
       e.setMessageForHumans(
         'if specified, options["maxPasswordLength"] must be greater than 13, if not specified it will default to 64'

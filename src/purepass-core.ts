@@ -108,7 +108,7 @@ export class Purepass {
           return
         }
         e.throw()
-      } // bring the ruckus!
+      } // bring the ruckus! HACF
     })
 
     const normalizedNamespace = this.capitalize(namespace)

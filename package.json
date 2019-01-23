@@ -120,7 +120,6 @@
   "dependencies": {
     "crypto-js": "^3.1.9-1",
     "current-type-of": "^2.0.0",
-    "easy-e": "^3.1.0",
-    "purepass-validators": "^2.0.0"
+    "purepass-validators": "^3.0.0"
   }
 }

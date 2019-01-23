@@ -2,14 +2,11 @@ language: node_js
 branches:
   only:
     - master
-    - /^greenkeeper/.*$/
-install:
-  - npm ci
 cache: false
 notifications:
   email: false
 node_js:
-  - node
+  - '8'
 script:
   - npm run test:prod && npm run build
 after_success:

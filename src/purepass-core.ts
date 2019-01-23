@@ -5,7 +5,7 @@
  */
 
 const SHA256 = require('crypto-js/sha256')
-import * as validate from './validators'
+import * as validate from 'purepass-validators'
 import myABCs from './myABCs'
 
 export class PurepassOptions {

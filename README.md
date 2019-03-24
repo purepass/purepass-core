@@ -27,7 +27,12 @@ Instead of the 'one password' approach where you lock many different passwords b
 
 ## usage
 
-This package is the core library for generating passwords, the source will always be public, and UI for ease of use is coming _soon™_
+This package is the core library for generating passwords, the source will always be public. It is already implemented in the following places:
+
+For a command line interface, checkout [purepass-cli](https://github.com/purepass/purepass-cli).
+
+For convenience [purepass.run](https://purepass.run) is a [purepass-view](https://github.com/purepass/purepass-view) implementation running in the browser.
+
 
 ## disclaimer
 

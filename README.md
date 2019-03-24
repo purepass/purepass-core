@@ -34,6 +34,6 @@ For a command line interface, checkout [purepass-cli](https://github.com/purepas
 For convenience [purepass.run](https://purepass.run) is a [purepass-view](https://github.com/purepass/purepass-view) implementation running in the browser.
 
 
-## disclaimer
+## reliability
 
-This is my first crypto-related project, and I wouldn't adopt it just yet without first understanding the source code. Though the algorithm is unlikely to change, it is early in development. Contributions are welcomed and encouraged!
+The deterministic password generator algorithm will not change. This is a project you can count on. Contributions are welcomed and encouraged!

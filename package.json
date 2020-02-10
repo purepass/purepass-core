@@ -118,7 +118,7 @@
     "typescript": "^2.9.2"
   },
   "dependencies": {
-    "crypto-js": "^3.1.9-1",
+    "crypto-js": "^3.2.0",
     "current-type-of": "^2.0.0",
     "purepass-validators": "^3.0.0"
   }

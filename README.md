@@ -2,7 +2,6 @@
 
 [![npm](https://img.shields.io/npm/v/purepass-core.svg)](https://npmjs.com/package/purepass-core)
 [![Travis](https://img.shields.io/travis/purepass/purepass-core.svg)](https://travis-ci.org/purepass/purepass-core)
-[![Greenkeeper badge](https://badges.greenkeeper.io/purepass/purepass-core.svg)](https://greenkeeper.io/)
 [![Coveralls](https://img.shields.io/coveralls/purepass/purepass-core.svg)](https://coveralls.io/github/purepass/purepass-core)
 
 [purepass-core docs generated with TypeDoc](https://purepass.github.io/purepass-core/)
